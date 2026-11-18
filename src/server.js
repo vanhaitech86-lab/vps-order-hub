@@ -863,7 +863,7 @@ const unitForRole = b => (b.role === 'unit_manager' || b.role === 'unit_staff') 
 
 // ================= Static =================
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'application/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8',
-  '.svg': 'image/svg+xml', '.png': 'image/png', '.ico': 'image/x-icon', '.json': 'application/json' };
+  '.svg': 'image/svg+xml', '.png': 'image/png', '.ico': 'image/x-icon', '.json': 'application/json', '.zip': 'application/zip' };
 function serveStatic(res, pathname) {
   let file = path.normalize(path.join(PUBLIC_DIR, decodeURIComponent(pathname)));
   if (!file.startsWith(PUBLIC_DIR)) return send(res, 403, 'Forbidden');
