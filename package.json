@@ -9,6 +9,6 @@
     "demo": "node scripts/demo-data.js"
   },
   "engines": {
-    "node": ">=22.13"
+    "node": "22.x"
   }
 }
